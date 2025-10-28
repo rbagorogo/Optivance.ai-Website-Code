@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optivance.ai | Strategic AI, Cloud & Digital Transformation</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font family and custom styles --><style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* New Dark Aesthetic Custom Utilities */
+        .optivance-neon-glow {
+            /* Subtle blue/cyan glow for key elements */
+            box-shadow: 0 0 10px rgba(74, 137, 245, 0.4), 0 0 20px rgba(0, 240, 255, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+        .optivance-card {
+            border: 1px solid rgba(74, 137, 245, 0.3); /* Soft blue border */
+        }
+        .optivance-card:hover {
+            border-color: #00F0FF; /* Neon cyan hover border */
+            box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+            transform: translateY(-4px);
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Core Dark Theme Palette
+                        'optivance-bg': '#0A0A1F', /* Very Dark Blue/Black */
+                        'optivance-primary-blue': '#4A89F5', /* Main CTA Blue */
+                        'optivance-neon-cyan': '#00F0FF', /* AI/Accent Color */
+                        'optivance-dark-gray': '#1B1B32', /* Card/Section Background */
+                        'optivance-text-light': '#F0F0F0', /* Primary text color */
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="text-optivance-text-light bg-optivance-bg">
+
+    <!-- Header & Navigation --><header class="sticky top-0 z-50 bg-optivance-bg border-b border-gray-800">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo --><a href="#" class="text-2xl font-extrabold text-optivance-neon-cyan tracking-wider">Optivance.ai</a>
+            
+            <!-- Desktop Nav Links --><nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#services" class="text-gray-400 hover:text-optivance-neon-cyan transition duration-200">Services</a>
+                <a href="#solutions" class="text-gray-400 hover:text-optivance-neon-cyan transition duration-200">Technology</a>
+                <a href="#about" class="text-gray-400 hover:text-optivance-neon-cyan transition duration-200">Regional Focus</a>
+                <a href="#contact" class="px-6 py-2 bg-optivance-primary-blue text-white rounded-full hover:bg-optivance-neon-cyan hover:text-optivance-bg optivance-neon-glow shadow-lg transition duration-300">Start Project</a>
+            </nav>
+
+            <!-- Mobile Menu Button --><button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-optivance-neon-cyan hover:bg-optivance-dark-gray transition">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu (Hidden by default) --><div id="mobile-menu" class="hidden md:hidden bg-optivance-bg px-4 pb-4 border-t border-gray-800">
+            <nav class="flex flex-col space-y-3 font-medium">
+                <a href="#services" class="py-2 text-gray-400 hover:text-optivance-neon-cyan transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Services</a>
+                <a href="#solutions" class="py-2 text-gray-400 hover:text-optivance-neon-cyan transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Technology</a>
+                <a href="#about" class="py-2 text-gray-400 hover:text-optivance-neon-cyan transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Regional Focus</a>
+                <a href="#contact" class="mt-2 text-center py-2 bg-optivance-primary-blue text-white rounded-full hover:bg-optivance-neon-cyan hover:text-optivance-bg optivance-neon-glow shadow-lg transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Start Project</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section --><section class="py-20 md:py-40 relative overflow-hidden">
+        <!-- Background Data Grid/Pattern (Subtle Effect) --><div class="absolute inset-0 opacity-5 pointer-events-none">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <pattern id="dot-grid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                    <circle fill="#4A89F5" cx="1" cy="1" r="1"></circle>
+                </pattern>
+                <rect width="100%" height="100%" fill="url(#dot-grid)"/>
+            </svg>
+        </div>
+        
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <!-- UPDATED SUBTITLE --><p class="text-sm font-semibold uppercase tracking-[0.3em] text-optivance-neon-cyan mb-3">CLOUD TECHNOLOGY. ARTIFICIAL INTELLIGENCE.</p>
+            <!-- UPDATED TITLE --><h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6 tracking-tight" style="text-shadow: 0 0 10px rgba(74, 137, 245, 0.5);">
+                <span class="text-optivance-primary-blue">Optimise</span> Digital Technology. <span class="text-optivance-neon-cyan">Advance</span> Your Competitive Edge.
+            </h1>
+            <!-- UPDATED BODY TEXT --><p class="text-lg md:text-xl mb-10 max-w-4xl mx-auto text-gray-300">
+                At Optivance.ai, we build robust digital frameworks—from Cloud infrastructure and CRM to bespoke AI tooling—to **optimise** efficiency, **advance** monitoring capabilities (M&E), and secure your competitive advantage across the African market.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#contact" class="inline-block px-10 py-4 text-lg font-bold bg-optivance-neon-cyan text-optivance-bg rounded-full optivance-neon-glow hover:bg-white transition duration-300">
+                    Consult an Expert
+                </a>
+                <a href="#services" class="inline-block px-10 py-4 text-lg font-bold border-2 border-optivance-primary-blue text-optivance-primary-blue rounded-full hover:bg-optivance-primary-blue hover:text-white transition duration-300">
+                    View Capabilities
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (Dark Cards) --><section id="services" class="py-16 md:py-24 bg-optivance-dark-gray border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <!-- UPDATED SERVICE TITLE --><h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-optivance-text-light">Digital Pillars for Optimisation & Advancement</h2>
+            <p class="text-center text-lg text-gray-400 mb-12 max-w-3xl mx-auto">
+                Our expertise is structured around key technology disciplines that deliver measurable efficiency and growth.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Service 1: Salesforce & CRM --><div class="bg-optivance-dark-gray p-6 rounded-xl shadow-2xl optivance-card hover:bg-optivance-bg transition duration-300">
+                    <svg class="w-10 h-10 text-optivance-primary-blue mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.864 23.864 0 0112 15c-3.187 0-6.223-.553-9-1.545M12 21V6.75l-4.5 4.5M12 21V6.75l4.5 4.5"></path></svg>
+                    <h3 class="text-xl font-bold mb-3 text-optivance-text-light">CRM & Digital Engagement</h3>
+                    <p class="text-gray-400 text-sm">
+                        Specialized Salesforce implementation and **optimisation** to unify sales, service, and marketing processes on a single platform.
+                    </p>
+                </div>
+
+                <!-- Service 2: M&E Digitization & BPA --><div class="bg-optivance-dark-gray p-6 rounded-xl shadow-2xl optivance-card hover:bg-optivance-bg transition duration-300">
+                    <svg class="w-10 h-10 text-optivance-neon-cyan mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    <h3 class="text-xl font-bold mb-3 text-optivance-text-light">M&E and Process Automation</h3>
+                    <p class="text-gray-400 text-sm">
+                        Digitizing monitoring & evaluation frameworks and automating core business processes for efficiency, transparency, and **advancement** in reporting.
+                    </p>
+                </div>
+                
+                <!-- Service 3: Cloud Infrastructure --><div class="bg-optivance-dark-gray p-6 rounded-xl shadow-2xl optivance-card hover:bg-optivance-bg transition duration-300">
+                    <svg class="w-10 h-10 text-optivance-primary-blue mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    <h3 class="text-xl font-bold mb-3 text-optivance-text-light">Cloud Architecture & Security</h3>
+                    <p class="text-gray-400 text-sm">
+                        Design and migration services on AWS and Google Cloud to ensure your operations are scalable, secure, and **optimised** for cost.
+                    </p>
+                </div>
+                
+                <!-- Service 4: AI Tools & Training --><div class="bg-optivance-dark-gray p-6 rounded-xl shadow-2xl optivance-card hover:bg-optivance-bg transition duration-300">
+                    <svg class="w-10 h-10 text-optivance-neon-cyan mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v14a2 2 0 002 2H9a2 2 0 01-2-2zM4 15V3a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <h3 class="text-xl font-bold mb-3 text-optivance-text-light">AI Integration & Upskilling</h3>
+                    <p class="text-gray-400 text-sm">
+                        Building custom AI tools and providing specialized training to **advance** your team in data science and cloud technology.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regional Impact Section (White/Light Section for Contrast) --><section id="about" class="py-16 md:py-24 bg-optivance-primary-blue text-white">
+        <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2">
+                <!-- UPDATED REGIONAL TITLE --><h2 class="text-3xl md:text-4xl font-bold mb-4">Localized Insight to Advance Global Standards.</h2>
+                <p class="text-lg mb-6 opacity-90">
+                    Optivance.ai is proudly based in **Gulu City, Uganda**. This strategic location allows us to deliver world-class technology solutions with a deep, nuanced understanding of the East African market's unique operational and infrastructural context.
+                </p>
+                <p class="opacity-80 mb-6">
+                    Our mission is to translate global digital best practices into effective, localized strategies that drive real, measurable impact across the region.
+                </p>
+                <a href="#contact" class="inline-block px-6 py-3 font-semibold bg-optivance-dark-gray text-optivance-neon-cyan rounded-full hover:bg-optivance-bg transition duration-300 border border-optivance-neon-cyan">
+                    Connect with Our Regional Team
+                </a>
+            </div>
+            <div class="lg:w-1/2">
+                <!-- Placeholder Image for Gulu/Map --><img src="https://placehold.co/600x400/1D4ED8/ffffff?text=REGIONAL+HUB%0A%26%0ALOCALIZED+IMPACT" alt="Map graphic showing Gulu City, Uganda" class="w-full h-auto rounded-xl shadow-2xl optivance-neon-glow">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Technology Partners/Focus Section --><section id="solutions" class="py-16 md:py-24 bg-optivance-bg border-t border-gray-800">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-optivance-text-light">Our Digital Ecosystem</h2>
+            
+            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12">
+                <!-- Salesforce --><div class="p-4 bg-optivance-dark-gray rounded-xl shadow-lg w-32 h-32 flex flex-col justify-center items-center optivance-card">
+                    <img src="https://placehold.co/100x40/4A89F5/ffffff?text=Salesforce" alt="Salesforce Logo" class="w-auto h-10 object-contain">
+                    <p class="mt-2 text-xs font-semibold text-gray-400">CRM Mastery</p>
+                </div>
+
+                <!-- AWS --><div class="p-4 bg-optivance-dark-gray rounded-xl shadow-lg w-32 h-32 flex flex-col justify-center items-center optivance-card">
+                    <img src="https://placehold.co/100x40/232F3E/FF9900?text=AWS" alt="AWS Logo" class="w-auto h-10 object-contain">
+                    <p class="mt-2 text-xs font-semibold text-gray-400">Secure Cloud</p>
+                </div>
+
+                <!-- Google Cloud --><div class="p-4 bg-optivance-dark-gray rounded-xl shadow-lg w-32 h-32 flex flex-col justify-center items-center optivance-card">
+                    <img src="https://placehold.co/100x40/4285F4/ffffff?text=GCP" alt="Google Cloud Logo" class="w-auto h-10 object-contain">
+                    <p class="mt-2 text-xs font-semibold text-gray-400">Scalable Platform</p>
+                </div>
+
+                <!-- AI / ML --><div class="p-4 bg-optivance-dark-gray rounded-xl shadow-lg w-32 h-32 flex flex-col justify-center items-center optivance-card">
+                    <!-- Custom AI Icon SVG --><svg class="w-10 h-10 text-optivance-neon-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v14a2 2 0 002 2H9a2 2 0 01-2-2zM4 15V3a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <p class="mt-2 text-xs font-semibold text-gray-400">AI Tooling</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form/CTA Section --><section id="contact" class="py-16 md:py-24 bg-optivance-dark-gray">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-optivance-neon-cyan">Initiate Transformation</h2>
+            <p class="text-center text-lg text-gray-400 mb-12">
+                Tell us about your digital goals. Our team is ready to engineer your solution.
+            </p>
+
+            <form id="contact-form" class="bg-optivance-bg p-8 md:p-12 rounded-2xl shadow-2xl border border-gray-800">
+                <div id="message-box" class="hidden p-4 mb-4 text-sm font-medium rounded-lg text-green-400 bg-green-900 border border-green-700" role="alert"></div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Full Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-700 bg-optivance-dark-gray text-white rounded-lg focus:ring-optivance-neon-cyan focus:border-optivance-neon-cyan transition duration-200" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Work Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-700 bg-optivance-dark-gray text-white rounded-lg focus:ring-optivance-neon-cyan focus:border-optivance-neon-cyan transition duration-200" required>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <label for="interest" class="block text-sm font-medium text-gray-300 mb-1">I am interested in...</label>
+                    <select id="interest" name="interest" class="w-full px-4 py-3 border border-gray-700 bg-optivance-dark-gray text-white rounded-lg focus:ring-optivance-neon-cyan focus:border-optivance-neon-cyan transition duration-200" required>
+                        <option value="">-- Select a primary interest --</option>
+                        <option value="Salesforce/CRM">CRM (Salesforce) Implementation</option>
+                        <option value="M&E Digitization">M&E Digitization / Automation</option>
+                        <option value="Cloud Migration">Cloud Infrastructure (AWS/GCP)</option>
+                        <option value="AI Tools">Bespoke AI Tool Development</option>
+                        <option value="Training">Technical Training/Workshops</option>
+                        <option value="General">General Inquiry</option>
+                    </select>
+                </div>
+
+                <div class="mb-6">
+                    <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Your Digital Challenge</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-700 bg-optivance-dark-gray text-white rounded-lg focus:ring-optivance-neon-cyan focus:border-optivance-neon-cyan transition duration-200" required></textarea>
+                </div>
+
+                <button type="submit" class="w-full px-6 py-3 font-bold text-lg bg-optivance-primary-blue text-white rounded-full optivance-neon-glow hover:bg-optivance-neon-cyan hover:text-optivance-bg transition duration-300">
+                    Send Data Packet
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer --><footer class="bg-optivance-bg border-t border-gray-800 text-gray-500 py-12">
+        <div class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <!-- Col 1: Logo & Mission --><div class="col-span-2 md:col-span-1">
+                <h3 class="text-2xl font-extrabold text-optivance-neon-cyan mb-4 tracking-wider">Optivance.ai</h3>
+                <p class="text-sm">Engineers of digital efficiency, specializing in cloud and intelligent systems across Africa.</p>
+                <p class="text-xs mt-4 text-gray-600">Headquartered in Gulu City, Uganda.</p>
+            </div>
+            
+            <!-- Col 2: Quick Links --><div>
+                <h4 class="text-lg font-semibold text-optivance-text-light mb-4">Navgate</h4>
+                <nav class="space-y-2 text-sm">
+                    <a href="#services" class="block hover:text-optivance-neon-cyan transition">Our Services</a>
+                    <a href="#solutions" class="block hover:text-optivance-neon-cyan transition">Technology Stack</a>
+                    <a href="#about" class="block hover:text-optivance-neon-cyan transition">Our Focus</a>
+                </nav>
+            </div>
+
+            <!-- Col 3: Contact Info --><div>
+                <h4 class="text-lg font-semibold text-optivance-text-light mb-4">Contact Protocol</h4>
+                <p class="text-sm">Gulu City, Uganda</p>
+                <p class="text-sm mt-2">Email: <a href="mailto:info@optivance.ai" class="hover:text-optivance-neon-cyan transition">info@optivance.ai</a></p>
+                <p class="text-sm">Phone: +256 77X XXX XXX</p>
+            </div>
+            
+            <!-- Col 4: Legal & Social --><div>
+                <h4 class="text-lg font-semibold text-optivance-text-light mb-4">Connect</h4>
+                <div class="flex space-x-4">
+                    <!-- GitHub Placeholder --><a href="#" class="hover:text-optivance-neon-cyan transition" title="GitHub">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.417 2.865 8.164 6.83 9.498.5.093.682-.217.682-.483 0-.237-.008-.867-.013-1.703-2.782.605-3.37-1.34-3.37-1.34-.454-1.157-1.11-1.46-1.11-1.46-.908-.62.069-.608.069-.608 1.007.07 1.532 1.033 1.532 1.033.89 1.527 2.341 1.085 2.91.829.091-.645.35-1.085.637-1.334-2.224-.252-4.557-1.118-4.557-4.942 0-1.09.39-1.977 1.03-2.673-.102-.251-.446-1.267.097-2.637 0 0 .84-.268 2.75 1.026A9.564 9.564 0 0112 6.844c.85.008 1.701.112 2.502.327 1.908-1.294 2.748-1.026 2.748-1.026.543 1.37.199 2.386.097 2.637.64.696 1.028 1.583 1.028 2.673 0 3.832-2.333 4.686-4.566 4.935.359.307.678.915.678 1.841 0 1.33.008 2.404.008 2.73 0 .267.18.577.688.484C19.137 20.18 22 16.435 22 12.017 22 6.484 17.522 2 12 2z"/></svg>
+                    </a>
+                    <!-- LinkedIn Placeholder --><a href="#" class="hover:text-optivance-neon-cyan transition" title="LinkedIn">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.23 0H1.77C.792 0 0 .774 0 1.728v20.544C0 23.226.792 24 1.77 24h20.46c.978 0 1.77-.774 1.77-1.728V1.728C24 .774 23.208 0 22.23 0zM7.34 20.47H3.59V9.45h3.75v11.02zM5.466 7.82c-1.22 0-2.21-.99-2.21-2.21 0-1.22.99-2.21 2.21-2.21 1.22 0 2.21.99 2.21 2.21 0 1.22-.99 2.21-2.21 2.21zm15 12.65h-3.75v-5.61c0-1.33-.024-3.04-1.855-3.04-1.857 0-2.14 1.45-2.14 2.94v5.71H9.98V9.45h3.61v1.65h.05c.504-.954 1.734-1.95 3.565-1.95 3.81 0 4.512 2.5 4.512 5.76v7.56z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright --><div class="border-t border-gray-800 mt-8 pt-6 text-center text-sm text-gray-600">
+            &copy; 2025 Optivance.ai. Digital architecture powered by intelligence.
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // JavaScript for Contact Form Submission (Mock)
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = e.target;
+            const messageBox = document.getElementById('message-box');
+            
+            if (form.checkValidity() === false) {
+                return;
+            }
+
+            // Show loading message
+            messageBox.textContent = 'Transmitting data packet securely...';
+            messageBox.classList.remove('hidden', 'text-green-400', 'bg-green-900', 'border-green-700');
+            messageBox.classList.add('text-optivance-primary-blue', 'bg-optivance-dark-gray', 'border-optivance-primary-blue');
+
+            // Simulate API submission delay
+            setTimeout(() => {
+                // Successful submission message
+                messageBox.textContent = 'Confirmation: Your challenge has been received. An expert will respond shortly.';
+                messageBox.classList.remove('text-optivance-primary-blue', 'bg-optivance-dark-gray', 'border-optivance-primary-blue');
+                messageBox.classList.add('text-green-400', 'bg-green-900', 'border-green-700');
+
+                // Clear the form fields
+                form.reset();
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
